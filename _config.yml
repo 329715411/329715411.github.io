@@ -102,9 +102,7 @@ theme: butterfly
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: git
-  repository: git@github.com:329715411/329715411.github.io.git
-  branch: main
+  type: ''
 
 # abbrlink config
 abbrlink:
