@@ -9,7 +9,8 @@ nav:
 
 # Menu 目錄
 menu:
-  # Home: / || fas fa-home
+  Home: / || fas fa-home
+  追番: /bangumis/index.html || fas fa-home
   # Archives: /archives/ || fas fa-archive
   # Tags: /tags/ || fas fa-tags
   # Categories: /categories/ || fas fa-folder-open
