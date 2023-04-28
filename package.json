@@ -20,6 +20,7 @@
     "hexo-abbrlink": "^2.2.1",
     "hexo-asset-image": "github:CodeFalling/hexo-asset-image",
     "hexo-bilibili-bangumi": "^1.8.6",
+    "hexo-butterfly-clock-anzhiyu": "^1.1.8",
     "hexo-butterfly-envelope": "^1.0.15",
     "hexo-butterfly-tag-plugins-plus": "^1.0.17",
     "hexo-butterfly-wowjs": "^1.0.5",
