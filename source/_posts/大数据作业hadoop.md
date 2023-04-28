@@ -3,6 +3,9 @@ title: 大数据作业hadoop
 date: 2023-04-28 11:24:17
 tags:
 ---
+
+hadoop安装教程：https://dblab.xmu.edu.cn/blog/2441/
+
 1. 首先进入hadoop文件夹。 执行以下命令：
 
 ``` javascript
