@@ -1011,14 +1011,14 @@ electric_clock:
   ip_api: https://widget.qweather.net/simple/static/js/he-simple-common.js?v=2.0
   qweather_key: 91782a45fc394b789e2cc59fa89e0a97 # 和风天气key
   gaud_map_key: 55f6b7a9fe782e8a16a293ac90db64fd # 高得地图web服务key
-  default_rectangle: true # 开启后将一直显示rectangle位置的天气，否则将获取访问者的地理位置与天气
+  default_rectangle: false # 开启后将一直显示rectangle位置的天气，否则将获取访问者的地理位置与天气
   rectangle: 112.6534116,27.96920845 # 获取访问者位置失败时会显示该位置的天气，同时该位置为开启default_rectangle后的位置
 
 # footer_beautify
 # 页脚计时器：[Native JS Timer](https://akilar.top/posts/b941af/)
 # 页脚徽标：[Add Github Badge](https://akilar.top/posts/e87ad7f8/)
 footer_beautify:
-  enable:
+  enable: 
     timer: true # 计时器开关
     bdage: true # 徽标开关
   priority: 5 #过滤器优先权
@@ -1087,7 +1087,7 @@ gitcalendar:
   #   name: content
   #   index: 0
   user: 329715411 #git用户名
-  apiurl: 'https://github.anzhiy.cn'
+  apiurl: ''
   minheight:
     pc: 280px #桌面端最小高度
     mibile: 0px #移动端最小高度
