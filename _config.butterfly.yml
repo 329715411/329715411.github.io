@@ -56,7 +56,7 @@ favicon: /img/favicon.png
 
 # Avatar (頭像)
 avatar:
-  img: https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png
+  img: https://img1.imgtp.com/2023/05/04/32wIdKbm.JPG
   effect: false
 
 # Disable all banner image
@@ -663,7 +663,8 @@ tag_ui: # 留空或 index
 # Website Background (設置網站背景)
 # can set it to color or image (可設置圖片 或者 顔色)
 # The formal of image: url(http://xxxxxx.com/xxx.jpg)
-background: url(/img/void2周年4k_077a8.jpg)
+background: url(https://img1.imgtp.com/2023/05/04/svTy1t51.JPG)
+# background: url(/img/void2周年4k_077a8.jpg)
 
 # Footer Background
 footer_bg: false
