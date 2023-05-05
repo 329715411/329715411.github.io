@@ -181,9 +181,9 @@ reward:
     - img: /img/wechat.JPG
       link:
       text: wechat
-    - img: /img/alipay.JPG
-      link:
-      text: alipay
+    # - img: /img/alipay.JPG
+    #   link:
+    #   text: alipay
 CDN:
   # main
   main_css: /css/index.css
