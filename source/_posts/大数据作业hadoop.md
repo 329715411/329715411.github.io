@@ -42,7 +42,7 @@ jps
 {% tip %}将本地文件上传到HDFS文件系统。执行以下命令：{% endtip %}
 
 ``` javascript
-./bin/hdfs  dfs -put (将上面复制的路径粘贴到这里) /user/你的学号/ 
+./bin/hdfs  dfs -put (将上面复制的路径粘贴到这里)/你的名字的拼音.txt /user/你的学号/ 
 ```
 
 {% tip %}查看文件。执行以下命令：{% endtip %}
@@ -50,3 +50,5 @@ jps
 ``` javascript
 ./bin/hdfs dfs -cat /user/你的学号/你的名字的拼音.txt
 ```
+
+{% tip %}打开这个链接进入网页查看http://localhost:9870{% endtip %}
