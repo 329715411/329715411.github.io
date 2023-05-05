@@ -56,7 +56,7 @@ favicon: /img/圣女果.png
 
 # Avatar (頭像)
 avatar:
-  img: https://img1.imgtp.com/2023/05/04/32wIdKbm.JPG
+  img: https://img1.imgtp.com/2023/05/05/gDvKQtmd.png
   effect: false
 
 # Disable all banner image
@@ -252,9 +252,9 @@ aside:
     description:
     button:
       enable: true
-      icon: fab fa-github
-      text: Follow Me
-      link: https://github.com/329715411
+      icon: icon-bilibili1
+      text: 关注我
+      link: https://space.bilibili.com/32054071
   card_announcement:
     enable: true
     content: 什么时候出个白术啊
