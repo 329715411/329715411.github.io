@@ -3,7 +3,7 @@ title: 大数据作业hadoop
 abbrlink: 3cb41f6a
 date: 2023-04-28 11:24:17
 tags: hadoop
-excerpt: 
+excerpt: hadoop作业的完成过程
 ---
 
 hadoop安装教程：https://dblab.xmu.edu.cn/blog/2441/
