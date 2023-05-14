@@ -257,7 +257,7 @@ aside:
       link: https://space.bilibili.com/32054071
   card_announcement:
     enable: true
-    content: 什么时候出个白术啊
+    content: 什么时候出个克拉拉
   card_recent_post:
     enable: true
     limit: 5 # if set 0 will show all
