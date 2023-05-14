@@ -2,6 +2,6 @@
 title: {{ title }}
 date: {{ date }}
 tags:
-excerpt: 
+excerpt: 描述
 comments: true
 ---
