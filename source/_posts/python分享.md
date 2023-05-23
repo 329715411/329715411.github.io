@@ -34,3 +34,5 @@ def guess(maxValue = 100,maxTimes = 5):
         print('The value is ', value)
 guess(maxValue=100,maxTimes=5)
 ```
+
+好玩的脚本
