@@ -53,3 +53,70 @@ jps
 ```
 
 {% tip %}打开这个链接进入网页查看http://localhost:9870{% endtip %}
+
+eclipse项目代码
+
+``` javascript
+import java.io.IOException;
+import java.io.PrintStream;
+import java.net.URI;
+import org.apache.hadoop.conf.Configuration;
+import org.apache.hadoop.fs.*;
+
+/**
+* 过滤掉⽂件名满⾜特定条件的⽂件
+*/
+class MyPathFilter implements PathFilter {
+	String reg = null;
+	MyPathFilter(String reg) {
+		this.reg = reg;
+	}
+	public boolean accept(Path path) {
+		if (!(path.toString().matches(reg)))
+			return true;
+		return false;
+	}
+	}
+/***
+* 利⽤FSDataOutputStream和FSDataInputStream合并HDFS中的⽂件
+*/
+	public class MergeFile {
+		Path inputPath = null; //待合并的⽂件所在的⽬录的路径
+		Path outputPath = null; //输出⽂件的路径
+		public MergeFile(String input, String output) {
+			this.inputPath = new Path(input);
+			this.outputPath = new Path(output);
+		}
+		public void doMerge() throws IOException {
+			Configuration conf = new Configuration();
+			conf.set("fs.defaultFS","hdfs://localhost:9000");
+			conf.set("fs.hdfs.impl","org.apache.hadoop.hdfs.DistributedFileSystem");
+			FileSystem fsSource = FileSystem.get(URI.create(inputPath.toString()), conf);
+			FileSystem fsDst = FileSystem.get(URI.create(outputPath.toString()), conf);
+			//下⾯过滤掉输⼊⽬录中后缀为.abc的⽂件
+			FileStatus[] sourceStatus = fsSource.listStatus(inputPath,new MyPathFilter(".*\\.abc"));
+			FSDataOutputStream fsdos = fsDst.create(outputPath);
+			PrintStream ps = new PrintStream(System.out);
+			//下⾯分别读取过滤之后的每个⽂件的内容，并输出到同⼀个⽂件中
+			for (FileStatus sta : sourceStatus) {
+				//下⾯打印后缀不为.abc的⽂件的路径、⽂件⼤⼩
+				System.out.print("路径：" + sta.getPath() + " ⽂件 ⼤⼩：" + sta.getLen()+ " 权限：" + sta.getPermission() + " 内 容：");
+				FSDataInputStream fsdis = fsSource.open(sta.getPath());
+				byte[] data = new byte[1024];
+				int read = -1; 
+				while ((read = fsdis.read(data)) > 0) {
+					ps.write(data, 0, read);
+					fsdos.write(data, 0, read);
+				}
+				fsdis.close(); 
+			}
+			ps.close();
+			fsdos.close();
+		}
+		public static void main(String[] args) throws IOException {
+//			MergeFile merge = new MergeFile("hdfs://localhost:9032/user/yuefan/","hdfs://localhost:9032/user/yuefan/merge.txt");
+			MergeFile merge = new MergeFile("hdfs://localhost:9000/user/hadoop/","hdfs://localhost:9000/user/hadoop/merge.txt");
+			merge.doMerge();
+		}
+	}
+```
