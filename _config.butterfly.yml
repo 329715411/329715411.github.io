@@ -257,7 +257,7 @@ aside:
       link: https://space.bilibili.com/32054071
   card_announcement:
     enable: true
-    content: 维包云盘http://39.106.0.178:5212/（不限速的网盘！）
+    content: （不限速的网盘！）维包云盘http://39.106.0.178:5212/ 更换为https://wbcloud.top 域名。用最新的域名进行注册，不要用原来的。
   card_recent_post:
     enable: true
     limit: 5 # if set 0 will show all
