@@ -56,7 +56,7 @@ favicon: /img/圣女果.png
 
 # Avatar (頭像)
 avatar:
-  img: https://pic2.imgdb.cn/item/645f59af0d2dde5777c39c48.jpg
+  img: https://wbcloud.top/f/zOFQ/107732952_p0_master1200.jpg
   effect: false
 
 # Disable all banner image
@@ -663,7 +663,7 @@ tag_ui: # 留空或 index
 # Website Background (設置網站背景)
 # can set it to color or image (可設置圖片 或者 顔色)
 # The formal of image: url(http://xxxxxx.com/xxx.jpg)
-background: url(https://wbcloud.top/f/wYfe/IMG_6074.JPG)
+background: url(https://wbcloud.top/f/3muO/IMG_6074.JPG)
 # background: url(/img/void2周年4k_077a8.jpg)
 
 # Footer Background
