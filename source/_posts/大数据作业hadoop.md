@@ -6,7 +6,9 @@ tags: hadoop
 description: hadoop作业的完成过程
 ---
 
-hadoop安装教程：https://dblab.xmu.edu.cn/blog/2441/
+{% btns rounded grid5 %}
+{% cell hadoop安装教程, https://dblab.xmu.edu.cn/blog/2441/, fas fa-book-open %}
+{% endbtns %}
 
 {% tip %}首先进入hadoop文件夹。 执行以下命令：{% endtip %}
 
