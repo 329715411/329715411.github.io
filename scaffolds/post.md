@@ -1,7 +1,10 @@
 ---
 title: {{ title }}
 date: {{ date }}
-tags:
-excerpt: 描述
+top_img: 
+cover: /img/xxx.jpg
+description: 描述
 comments: true
+tags: 
 ---
+
