@@ -201,7 +201,7 @@ encrypt: # hexo-blog-encrypt
   abstract: 这里有东西被加密了，需要输入密码查看哦。
   message: 您好, 这篇文章需要密码.
   tags:
-  - {name: 期末加密, password: ABcd0526}
+  - {name: 软件测试期末加密, password: ABcd0526}
   - {name: tagName, password: 密码B}
   theme: xray
   wrong_pass_message: 抱歉, 这个密码看着不太对, 请再试试.
