@@ -9,7 +9,7 @@ tags:
 
 猜数字小游戏
 
-```javascript
+``` Python
 from random import randint
 
 def guess(maxValue = 100,maxTimes = 5):
@@ -47,7 +47,7 @@ guess(maxValue=100,maxTimes=5)
 
 还有，自除数不允许包含 0 
 
-``` javascript
+``` Python
 def checkN(N):
     n = int(N)
     o = 10
