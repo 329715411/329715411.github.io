@@ -257,7 +257,7 @@ aside:
       link: https://space.bilibili.com/32054071
   card_announcement:
     enable: true
-    content: （不限速的网盘！支持在线压缩/解压缩！支持在线查看文档、PDF等）https://wbcloud.top 维包云盘（自建网盘）。
+    content: （自建网盘。不限速的网盘！支持在线压缩/解压缩！支持在线查看文档、PDF等）https://wbcloud.top 维包云盘。
   card_recent_post:
     enable: true
     limit: 5 # if set 0 will show all
