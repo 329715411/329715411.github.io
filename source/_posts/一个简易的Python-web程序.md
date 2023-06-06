@@ -1,11 +1,12 @@
 ---
 title: 一个简易的Python_web程序
-cover: https://wbcloud.top/f/xQUw/IMG_6783.JPG
+cover: 'https://wbcloud.top/f/xQUw/IMG_6783.JPG'
 description: 学生管理，不用安装数据库！只需要有Python环境即可
 comments: true
+tags: Python
+abbrlink: 62990f58
 date: 2023-06-06 18:28:24
 top_img:
-tags: Python
 ---
 
 {% span red, 点击下方下载本文章的所有相关文件  %}
